@@ -27,13 +27,11 @@ function emailRegexTest() {
 }
 
 form.addEventListener('submit', (event) => {
-    // event.preventDefault()
+    event.preventDefault()
 
     inputs.forEach((input, index) => {
         if (input.value === '') addError(index)
         else removeError(index)
     });
     emailRegexTest()
-
-    console.log(event)
 })
