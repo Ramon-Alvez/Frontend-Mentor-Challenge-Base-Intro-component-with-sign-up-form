@@ -116,11 +116,11 @@ body
 }
 .input-error.show { display: block; }
 
-#form .input-container .input-box .input:user-invalid
+#form .input-container .input-box .input.invalid
 {
     border: 0.2rem solid var(--Primary);
 }
-.input-box .input:user-invalid ~ .error-icon
+.input-box .input.invalid ~ .error-icon
 {
     content: "";
     display: block;
@@ -128,7 +128,7 @@ body
     height: 2.5rem;
     background: url(../images/icon-error.svg) no-repeat;
     position: absolute;
-    top: calc(2.25rem - 1.2rem);  /* (1/2 Input height) - (1/2 icon height) */
+    top: calc(50% - 2.4rem);
     right: 2.5rem;
 }
 /* Input Error Style => End */

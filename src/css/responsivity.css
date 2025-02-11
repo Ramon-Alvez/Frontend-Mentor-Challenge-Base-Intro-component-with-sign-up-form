@@ -64,9 +64,8 @@
         padding: 2.5rem;
         font-size: var(--FontSize);
     }
-    #form .input-box .input:user-invalid ~ .error-icon
+    #form .input-box .input.invalid ~ .error-icon
     {
-        top: calc(3.3rem - 1.2rem);  /* (1/2 Input height) - (1/2 icon height) */
         right: 3rem;
     }
 
