@@ -1,0 +1,24 @@
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Primary: hsl(0, 100%, 74%);
+    --SubmitButton: hsl(154, 59%, 51%);
+
+    /* ### Accent */
+
+    --Accent: hsl(248, 32%, 49%);
+
+    /* ### Neutral */
+
+    --Neutral1: hsl(249, 10%, 26%);
+    --Neutral2: hsl(246, 25%, 77%);
+    --Shadow: hsla(0, 0%, 0%, 0.2);
+
+    /* ## Typography */
+
+    /* ### Body Copy */
+
+    --FontSize: 1.6rem;
+}

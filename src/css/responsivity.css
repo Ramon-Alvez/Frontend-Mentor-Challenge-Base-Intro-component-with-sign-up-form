@@ -1,0 +1,77 @@
+@media screen and (min-width: 930px) {
+    /* Body Background Config */
+    body 
+    { 
+        background: url(../images/bg-intro-desktop.png) center 11rem; 
+        background-color: var(--Primary);
+    }
+
+    /* GRID Config */
+    #page-intro { grid-area: page-intro; }
+    #sign-in { grid-area: sign-in; }
+
+    #container
+    {
+        display: grid;
+        grid-template-areas: 
+            "page-intro sign-in"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 90vh;
+        gap: 2rem;
+        padding: 0 11.5%;
+    }
+
+    /* Header Style */
+    #page-intro
+    {
+        text-align: left;
+        margin-right: 9%;
+    }
+    #page-intro .title
+    {
+        font-size: calc(var(--FontSize) * 3.1);
+        align-self: flex-start;
+        max-width: 50rem;
+        line-height: 6rem;
+    }
+
+    /* Sign-in Container */
+    #sign-in 
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Free test Message */
+    #container #free-test-message
+    {
+        width: 100%;
+        padding: 2.5rem;
+    }
+
+    /* Form Style */
+    #container #form {
+        width: 100%;
+        padding: 5rem;
+    }
+    #form .input-container { gap: 2.5rem; }
+
+    #form .input-container .input-box .input
+    {
+        padding: 2.5rem;
+        font-size: var(--FontSize);
+    }
+    #form .input-box .input:user-invalid ~ .error-icon
+    {
+        top: calc(3.3rem - 1.2rem);  /* (1/2 Input height) - (1/2 icon height) */
+        right: 3rem;
+    }
+
+    /* Submit button */
+    #form .submit-bttn { font-size: var(--FontSize); }
+
+    #form .terms-and-services { max-width: none; }
+}
